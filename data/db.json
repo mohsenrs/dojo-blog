@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "welcome to new blogpost",
+      "body": "lorem ipsum dolor sit",
+      "tags": ["webdev", "css", "html"]
+    },
+    {
+      "id": 2,
+      "title": "welcome to new blogpost2",
+      "body": "lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit",
+      "tags": ["webdev2", "css", "html2"]
+    }
+  ]
+}
