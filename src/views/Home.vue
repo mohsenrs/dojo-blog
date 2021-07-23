@@ -1,18 +1,21 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PostList :posts="posts" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import { ref } from '@vue/reactivity';
+import PostList from '../components/PostList.vue';
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  components: { PostList },
+  setup() {
+    const posts = ref([
+      { title: 'soosis', body: 'lorem ipsum', id: 1 },
+      { title: 'soosis22', body: 'lorem ipsum', id: 2 },
+    ]);
+    return { posts };
+  },
+};
 </script>
